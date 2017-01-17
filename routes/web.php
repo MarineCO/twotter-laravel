@@ -13,11 +13,11 @@ Route::get('/about', function(){
 });
 
 Route::post('twoots', function(){
-//    Twoot::______([
-//        'text' => request()->____
-//    ]);
-//
-//    return redirect()->to('_');
+   Twoot::create([
+       'text' => request()->text
+   ]);
+
+   return redirect()->to('/');
 });
 
 Route::delete('twoots/{id}', function($id){
