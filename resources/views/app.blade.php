@@ -30,7 +30,11 @@
 
                 <div class="card-block">
 
-                    <h4 class="card-title">{{ $twoot->text }}</h4>
+                    <h4 class="card-title">
+                        <a href="{{ url("/twoot/$twoot->id") }}">
+                            {{ $twoot->text }}
+                        </a>
+                    </h4>
 
 
                     <form action="{{ url("/twoots/$twoot->id") }}" method="POST">

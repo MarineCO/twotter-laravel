@@ -8,6 +8,12 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/twoot/{id}', function($id){
+	return view('twoot')->with([
+			'twoot' => Twoot::find($id)
+		]);
+});
+
 Route::get('/about', function(){
    return view('about');
 });
