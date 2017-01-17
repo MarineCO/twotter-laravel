@@ -3,9 +3,8 @@
 use App\Twoot;
 
 Route::get('/', function () {
-    // Récupérer tous les "twoots" et les ajouter à la vue
     return view('app')->with([
-        'twoots' => [] //Twoot::___()
+        'twoots' => Twoot::all()
     ]);
 });
 
