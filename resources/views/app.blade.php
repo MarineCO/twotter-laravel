@@ -39,7 +39,7 @@
                     </form>
                 </div>
                 <div class="card-footer text-muted">
-                    Créé il y a pas longtemps
+                    {{ $twoot->created_at->diffForHumans() }}
                 </div>
             </div>
         @endforeach
