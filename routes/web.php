@@ -14,7 +14,7 @@ Route::get('/about', function(){
 
 Route::post('twoots', function(){
    Twoot::create([
-       'text' => request()->text
+       'text' => request()->text . ' ' . 'bla bla'
    ]);
 
    return redirect()->to('/');
