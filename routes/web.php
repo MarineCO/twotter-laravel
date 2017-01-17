@@ -9,10 +9,9 @@ Route::get('/', function () {
     ]);
 });
 
-//Ici, décommenter et créer la route '/about'
-//Route::get('______', function(){
-//    return ____; //Renvoyer la vue 'about' !
-//});
+Route::get('/about', function(){
+   return view('about');
+});
 
 Route::post('twoots', function(){
 //    Twoot::______([
