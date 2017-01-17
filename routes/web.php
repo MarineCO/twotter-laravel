@@ -21,8 +21,7 @@ Route::post('twoots', function(){
 });
 
 Route::delete('twoots/{id}', function($id){
-//    Trouver le twoot, puis le supprimer
-//    Twoot::____($id)->______();
+   Twoot::find($id)->delete();
 
     return redirect()->to('/');
 });
